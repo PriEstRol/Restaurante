@@ -14,22 +14,95 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>.view {
+        background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    .navbar {
+        background-color: transparent;
+    }
+
+    .top-nav-collapse {
+        background-color: #4285F4;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .navbar {
+            background-color: #4285F4;
+        }
+    }
+    </style>
 </head>
 
 <body>
 
-<!-- Start your project here-->
-<div style="height: 100vh">
-    <div class="flex-center flex-column">
-        <h1 class="animated fadeIn mb-4">Material Design va a hacer que aprobemos loco</h1>
 
-        <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+<!--Main Navigation-->
+<header>
 
-        <p class="animated fadeIn text-muted">MDB Team</p>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong>Navbar</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="view intro hm-purple-light" style="">
+        <div class="full-bg-img flex-center">
+            <div class="container text-center white-text wow fadeInUp">
+                <h2>Restaurant Spinorat</h2>
+                <br>
+                <h5>Hay que cambiar la imagen de fondo del home , que esta en el css</h5>
+                <p>Es una prueba del home</p>
+                <br>
+                <p>Full responsive niñooo</p>
+            </div>
+        </div>
     </div>
-</div>
-<!-- /Start your project here-->
 
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+<!--Main Layout-->
 <!-- SCRIPTS -->
 <!-- JQuery -->
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
