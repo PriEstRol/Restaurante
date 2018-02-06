@@ -1,5 +1,6 @@
 .view {
     background: url("../img/wallpaper2.jpg") no-repeat center center;
+    background-size: cover;
 
 }
 
