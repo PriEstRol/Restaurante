@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/localizacion.css" rel="stylesheet">
+    <!--custom font-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+
+<body>
+
+
+<!--Main Navigation-->
+<header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong style="color: #5fcbf2">SPINORAT</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Localización<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comentarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="view intro hm-purple-light">
+        <div class="full-bg-img">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center fadeInUpBig wow marg" style="font-family: 'Dancing Script', cursive;
+ font-size: 40px;">El restaurante se encuentra aquí</h3>
+
+
+                        <div id="mapa" class="container text-center wow fadeInUp">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h3 style="font-family:'Dancing Script', cursive;">Información del restaurante</h3>
+                <br>
+                <br>
+                <p align="left">Granada , España</p>
+                <br>
+                <p align="left">Teléfono : 973658743</p>
+                <br>
+                <p align="left">Correo electronico : restaurantSpino@rat.com</p>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+<footer class="nb-footer">
+    <div class="about">
+        <img src="images/logo.png" class="img-responsive center-block" alt="">
+        <p>Este proyecto lo hemos realizado los alumnos Francisco Manuel Roldán Pérez y Jesus Estévez Rodríguez, con
+            ayuda de Bootstrap, Material Design, Jquery y los conocimientos proporcionados por el profesor para el
+            correcto uso de dichas herramientas. Abajo se pueden
+            encontrar los GitHub de ambos alumnos.</p>
+
+        <div class="social-media">
+            <a data-toggle="tooltip" data-placement="top" title="Francisco M. Roldán Pérez"
+               href="https://github.com/FranRP"
+               title=""><i class="fa fa-github"></i></a>
+            <a data-toggle="tooltip" data-placement="bottom" title="Jesús Estévez Rodríguez"
+               href="https://github.com/jEstevezRod" title=""><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+
+    let pos;
+    let mapa;
+    let geocoder;
+    let infowindow;
+
+    function initMap() {
+        if ("geolocation" in navigator) {
+            return navigator.geolocation.getCurrentPosition(Mapa);
+        } else {
+            document.write('Desactivado');
+        }
+    }
+
+    function Mapa(position) {
+        pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+        };
+        mapa = new google.maps.Map(document.getElementById('mapa'), {
+            zoom: 15,
+            center: pos
+        });
+        carl(geocoder, mapa, infowindow)
+    };
+
+    function carl(geocoder, mapa, infowindow) {
+        geocoder = new google.maps.Geocoder;
+        infowindow = new google.maps.InfoWindow;
+        geocoder.geocode({
+            'location': pos
+        }, function (results) {
+            mapa.setZoom(17);
+            let marker = new google.maps.Marker({
+                position: pos,
+                map: mapa
+            });
+            infowindow.setContent(results[1].formatted_address);
+            infowindow.open(mapa, marker);
+        });
+    };
+</script>
+<!--Main Layout-->
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi0TplbIYCey3l9FmUQGSQPoRgXTiq01M&callback=initMap">
+</script>
+</body>
+
+</html>
