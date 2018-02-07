@@ -1,7 +1,16 @@
 .view {
     background: url("../img/wallpaper2.jpg") no-repeat center center;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
 
+.intro {
+    min-height: 300px !important;
+}
+
+.alinear {
+    align-items: center;
 }
 
 .navbar {
@@ -29,13 +38,9 @@
 }
 
 #mapa {
-    height: 600px;
+    height: 470px;
     width: 100%;
     color: #000000;
-}
-
-.view {
-    height: 100%;
 }
 
 .marg {
@@ -80,6 +85,10 @@
 footer.nb-footer .about p {
     font-size: 14px;
     color: #999;
+}
+
+button:hover {
+    background-color: #e7f1ff !important;
 }
 
 .top-nav-collapse {
