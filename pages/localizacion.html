@@ -40,7 +40,7 @@
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Carta</a>
+                    <a class="nav-link" href="carta.html">Carta</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Galería</a>
@@ -56,21 +56,14 @@
     </nav>
 
     <div class="view intro hm-purple-light">
-        <div class="full-bg-img">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="text-center fadeInUpBig wow marg" style="font-family: 'Dancing Script', cursive;
- font-size: 40px;">El restaurante se encuentra aquí</h3>
-
-
-                        <div id="mapa" class="container text-center wow fadeInUp">
-
-                        </div>
-                    </div>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center fadeInUpBig wow marg" style="font-family: 'Dancing Script', cursive;
+ font-size: 40px;">Aquí tienes la localización de nuestro restaurante</h3>
                 </div>
-
             </div>
+
         </div>
     </div>
 
@@ -82,7 +75,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6 ">
+            <div class="col-md-5 ">
                 <h3 style="font-family:'Dancing Script', cursive;">Información del restaurante</h3>
                 <br>
                 <br>
@@ -91,6 +84,45 @@
                 <p align="left">Teléfono : 973658743</p>
                 <br>
                 <p align="left">Correo electronico : restaurantSpino@rat.com</p>
+                <br>
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Día</th>
+                        <th scope="col">Horario - Tarde</th>
+                        <th scope="col">Horario - Noche</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Lunes a Viernes</th>
+                        <td>13:00 - 16:30</td>
+                        <td>21:00 - 00:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sabado - Domingo</th>
+                        <td>14:00 - 16:30</td>
+                        <td>21:00 - 02:30</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p></p>
+                <form class="form-inline justify-content-center">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda por localidad"
+                           aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+
+            </div>
+            <div class="col-md-1 clearfix"></div>
+            <div class="col-md-6">
+                <h3 style="font-family:'Dancing Script', cursive;">Puedes encontrarnos aquí</h3>
+                <br>
+                <br>
+                <div id="mapa" class="container text-center wow fadeInUp">
+
+                </div>
             </div>
         </div>
 
@@ -118,10 +150,10 @@
 
 <script>
 
-    let pos;
-    let mapa;
-    let geocoder;
-    let infowindow;
+    var pos;
+    var mapa;
+    var geocoder;
+    var infowindow;
 
     function initMap() {
         if ("geolocation" in navigator) {
@@ -150,7 +182,7 @@
             'location': pos
         }, function (results) {
             mapa.setZoom(17);
-            let marker = new google.maps.Marker({
+            var marker = new google.maps.Marker({
                 position: pos,
                 map: mapa
             });

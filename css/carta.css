@@ -1,0 +1,55 @@
+.view {
+    background: url("../img/wallpaper3.jpg") no-repeat center center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.container {
+    font-family: 'Dancing Script';
+}
+
+.titulo {
+    justify-content: center !important;
+    margin-bottom: 30px;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+#accordion {
+    margin-top: 40px;
+    width: 100% !important;
+}
+
+#accordion .card button:hover {
+    color: #000000 !important;
+    background-color: #fdfbff !important;
+}
+
+.card-body {
+    font-size: 20px;
+}
+
+.card {
+    margin-bottom: 20px !important;
+}
+
+.card-deck .card img {
+    max-height: 142px;
+}
+
+.titulocarta {
+    justify-content: center !important;
+    margin-top: 30px;
+}
+
+.card-content p {
+    margin-right: 15px;
+    margin-left: 15px;
+}

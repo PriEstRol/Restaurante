@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../css/localizacion.css" rel="stylesheet">
+    <!--custom font-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <link href="../css/carta.css" rel="stylesheet">
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+
+<!--Main Navigation-->
+<header>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong style="color: #5fcbf2">SPINORAT</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="localizacion.html">Localización<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comentarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="view intro hm-purple-light">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center fadeInUpBig wow marg" style="font-family: 'Dancing Script', cursive;
+ font-size: 40px;">Aquí te mostramos nuestros mejores platos y carta</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5">
+    <div class="container">
+        <div class="row titulo">
+            <h1>Nuestros mejores platos</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <!--Image Card-->
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <div class="view overlay hm-white-slight z-depth-1">
+                            <img src="../img/plato1.jpg" class="img-fluid" alt="">
+                            <div class="mask waves-effect"></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Lomo a la pimienta</h4>
+                        <p> Un plato elegante y sabroso, para los amantes de la carne, con una exquisita salsa de
+                            champiñones que le dará un sabor inigualable.</p>
+                        <br>
+                        <p><span>Precio: </span> 26€</p>
+                    </div>
+                </div>
+                <!--Image Card-->
+            </div>
+            <div class="col-md-4">
+                <!--Image Card-->
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <div class="view overlay hm-white-slight z-depth-1">
+                            <img src="../img/plato2.jpg" class="img-fluid" alt="">
+                            <div class="mask waves-effect"></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Lasaña de Txangurro</h4>
+                        <p> Este plato, está cocinado con una base de Pescados y mariscos y pertenece a los platos de la
+                            cocina Tradicional. Un plato marinero y muy sabroso.</p>
+                        <br>
+                        <p><span>Precio: </span>32€</p>
+                    </div>
+                </div>
+                <!--Image Card-->
+            </div>
+            <div class="col-md-4">
+                <!--Image Card-->
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <div class="view overlay hm-white-slight z-depth-1">
+                            <img src="../img/plato3.jpg" class="img-fluid" alt="">
+                            <div class="mask waves-effect"></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Ensalada de langostinos con piña</h4>
+                        <p> Este plato, está cocinado con una base de Ensaladas y pertenece a los platos de la cocina
+                            Tradicional. Un plato nutritivo, sabroso, saludable y muy fresco. </p>
+                        <br>
+                        <p><span>Precio: </span>22€</p>
+                    </div>
+                </div>
+                <!--Image Card-->
+            </div>
+        </div>
+        <div class="row titulocarta">
+            <h1>Nuestra carta más selecta</h1>
+        </div>
+        <div class="row">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="entrantes">
+                        <h5 class="mb-0">
+                            <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseEntrantes"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                Desplegar nuestra selección de <span>Entrantes</span>
+                            </button>
+                        </h5>
+                        <h5 class="mt-2">Una receta no tiene alma, es el cocinero quien debe darle alma a la
+                            receta.</h5>
+                        <div class="text-right">
+                            <h7>Thomas Keller</h7>
+                        </div>
+                    </div>
+
+                    <div id="collapseEntrantes" class="collapse" aria-labelledby="entrantes"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/entrantes/entrantes1.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tostás de sobrada y queso de cabra</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Otros y pertenece
+                                            a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 6€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/entrantes/entrantes2.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Canapé de atún con pimientos</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 9€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/entrantes/entrantes3.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Canapés de jamón, queso y piña</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Otros y pertenece
+                                            a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 8€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/entrantes/entrantes4.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tartaleta de mejillones con bonito</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 10€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/entrantes/entrantes5.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Caballa envuelta en pimientos asados</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 8.4€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/entrantes/entrantes6.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pulpo con patata y salsa de pimientos</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 7€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/entrantes/entrantes7.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Langostinos a la plancha</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 8.5€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/entrantes/entrantes8.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Aros de cebolla empanados</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Verduras y
+                                            legumbres y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 10.7€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="primeros">
+                        <h5 class="mb-0">
+                            <button class="btn btn-dark collapsed" data-toggle="collapse"
+                                    data-target="#collapsePrimeros"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                Desplegar nuestra selección de <span>Primeros</span>
+                            </button>
+                        </h5>
+                        <h5 class="mt-2">No existe plato desdeñado en la cocina cuando se realiza de manera
+                            auténtica.</h5>
+                        <div class="text-right">
+                            <h7>Miguel de Cervantes</h7>
+                        </div>
+
+                    </div>
+                    <div id="collapsePrimeros" class="collapse" aria-labelledby="primeros" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/primeros/primero1.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pato con crema de hongos y castañas</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Otros y pertenece
+                                            a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 20€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/primeros/primero2.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bogavante al estilo Newberg</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 43€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/primeros/primero3.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lasaña de Txangurro</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 32€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/primeros/primero4.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tartaleta de mejillones con bonito</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 10€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/primeros/primero5.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Filetes de gallo con salsa de gambas</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 23€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/primeros/primero6.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tartar de salmón con nata agria</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 35€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/primeros/primero7.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Foie a la plancha sobre ragú de pato </h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Carnes y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 29.5€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/primeros/primero8.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ensalada de langostinos con piña</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Ensaladas y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 22€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="segundos">
+                        <h5 class="mb-0">
+                            <button class="btn btn-dark collapsed" data-toggle="collapse"
+                                    data-target="#collapseSegundos"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                Desplegar nuestra selección de <span>Segundos</span>
+                            </button>
+                            <h5 class="mt-2">No hay amor más sincero que el amor a la comida.</h5>
+                            <div class="text-right">
+                                <h7>George Bernard Shaw</h7>
+                            </div>
+                        </h5>
+                    </div>
+                    <div id="collapseSegundos" class="collapse" aria-labelledby="segundos" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/segundos/segundo1.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Solomillo de ternera relleno de foie-gras</h5>
+                                        <p class="card-text">Este plato está cocinado con una base de Carnes y pertenece
+                                            a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 30€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/segundos/segundo2.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pierna de cordero lechal al horno</h5>
+                                        <p class="card-text">Este plato está cocinado con una base de Carnes y pertenece
+                                            a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 31€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/segundos/segundo3.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rodaballo al horno</h5>
+                                        <p class="card-text">Este plato está cocinado con una base de pescados y
+                                            mariscos y pertenece a los platos de la cocina.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 23€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/segundos/segundo4.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Entrecot a la plancha con lombarda</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Carnes y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 20€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/segundos/segundo5.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rotí de pavo relleno</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Aves y caza y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 23.6€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/segundos/segundo6.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chuletas de cordero a la menta</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Carnes y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 25€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/segundos/segundo7.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Costillar de conejo relleno de foie-gras</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Aves y caza y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 23.5€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/segundos/segundo8.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cabrito asado a la murciana</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Aves y caza y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 27.7€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="postres">
+                        <h5 class="mb-0">
+                            <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapsePostres"
+                                    aria-expanded="false" aria-controls="collapseCuatro">
+                                Desplegar nuestra selección de <span>Postres</span>
+                            </button>
+                            <h5 class="mt-2">La vida interior necesita una casa confortable y una buena cocina.</h5>
+                            <div class="text-right">
+                                <h7>David Herbert Lawrence</h7>
+                            </div>
+                        </h5>
+                    </div>
+                    <div id="collapsePostres" class="collapse" aria-labelledby="postres" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/postres/postre1.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bizcocho de yogur de limón</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Postres y
+                                            pertenece a los platos de la cocina Tradicional. </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 10€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/postres/postre2.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Brownie de chocolate</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Postres y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 11€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/postres/postre3.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Buñuelos de viento</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Postres y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 12€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/postres/postre4.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Crema tradicional catalana</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Postres y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 10€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/postres/postre5.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tarta de manzana</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Postres y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 13€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/postres/postre6.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tiramisú casero</h5>
+                                        <p class="card-text">El tiramisú casero es un postre típico de la cocina
+                                            italiana pero ya aceptado en la gastronomía española</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 15€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/postres/postre7.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Flan tradicional de huevo al baño María</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Postres y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 13.5€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/postres/postre8.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bizcocho de yogur</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Postres y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 13.7€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="bebidas">
+                        <h5 class="mb-0">
+                            <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseBebidas"
+                                    aria-expanded="false" aria-controls="collapseCuatro">
+                                Desplegar nuestra selección de <span>Bebidas</span>
+                            </button>
+                            <h5 class="mt-2">El secreto del éxito en la vida es comer lo que te gusta y dejar que la
+                                comida combata dentro.</h5>
+                            <div class="text-right">
+                                <h7>Mark Twain</h7>
+                            </div>
+                        </h5>
+                    </div>
+                    <div id="collapseBebidas" class="collapse" aria-labelledby="bebidas" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/bebidas/bebida1.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Alabaster 2014</h5>
+                                        <p class="card-text">El viñedo de cepas centenarias es el secreto a voces de
+                                            este tinto de gran cuerpo.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 40€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/bebidas/bebida2.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Porrera 2014 Vi de Vila</h5>
+                                        <p class="card-text">Elaborado con cariñena mayoritariamente y con garnacha de
+                                            vides centenarias que fermentaron y se criaron separadamente</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 54€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/bebidas/bebida3.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pago Garduña 2013</h5>
+                                        <p class="card-text">Un syrah de viñedo de altura perfectamente resguardado por
+                                            los árboles que lo circundan en la vaguada donde se asienta.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 43€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/bebidas/bebida4.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gran Reserva 890 2004</h5>
+                                        <p class="card-text">Muchas razones para atesorar este tinto. Fue la primera vez
+                                            que el graciano participó en la mezcla, en esta cosecha calificada como
+                                            “Excelente”.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 20€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-deck">
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/bebidas/bebida5.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mauro VS 2012</h5>
+                                        <p class="card-text">Un tinto intenso, concentrado, con fruta a raudales que no
+                                            hace más que presagiar lo grandioso que estará dentro de unos años más.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 23.6€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/bebidas/bebida6.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Grans Muralles 2014</h5>
+                                        <p class="card-text"> El milagro: el suelo de licorella del viñedo y el uso de
+                                            variedades autóctonas recuperadas, junto con las más conocidas de
+                                            monastrell, garnacha y cariñena.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 25€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/bebidas/bebida7.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barón de Chirel 2010 reserva</h5>
+                                        <p class="card-text">Es un nombre que no solo es historia de Rioja, del vino, y
+                                            de los grandes cambios habidos en el sector en lo alto de la pirámide de la
+                                            calidad, sino ejemplo de elegancia.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 23.5€</span></small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img class="card-img-top" src="../img/bebidas/bebida8.jpg"
+                                         alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Finca Malaveïna 2012</h5>
+                                        <p class="card-text">Un compendio de variedades perfectamente orquestadas que
+                                            consiguen una rica sensación de matices aromáticos que coquetean con las
+                                            notas más frutales.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted"><span>Precio: 27.7€</span></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</main>
+<footer class="nb-footer">
+    <div class="about">
+        <img src="images/logo.png" class="img-responsive center-block" alt="">
+        <p>Este proyecto lo hemos realizado los alumnos Francisco Manuel Roldán Pérez y Jesus Estévez Rodríguez, con
+            ayuda de Bootstrap, Material Design, Jquery y los conocimientos proporcionados por el profesor para el
+            correcto uso de dichas herramientas. Abajo se pueden
+            encontrar los GitHub de ambos alumnos.</p>
+
+        <div class="social-media">
+            <a data-toggle="tooltip" data-placement="top" title="Francisco M. Roldán Pérez"
+               href="https://github.com/FranRP"
+               title=""><i class="fa fa-github"></i></a>
+            <a data-toggle="tooltip" data-placement="bottom" title="Jesús Estévez Rodríguez"
+               href="https://github.com/jEstevezRod" title=""><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+
+</script>
+<!--Main Layout-->
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi0TplbIYCey3l9FmUQGSQPoRgXTiq01M&callback=initMap">
+</script>
+</body>
+
+</html>
