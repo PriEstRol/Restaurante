@@ -38,6 +38,7 @@
 }
 
 #mapa {
+    border: 2px solid;
     height: 470px;
     width: 100%;
     color: #000000;
