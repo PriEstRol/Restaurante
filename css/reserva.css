@@ -1,0 +1,32 @@
+.row {
+    justify-content: center;
+}
+
+.form-group {
+    text-align: right;
+}
+
+.form {
+    width: 100%;
+}
+
+.titulo {
+    font-family: 'Dancing Script';
+    margin-bottom: 30px;
+}
+
+.input-group img {
+    margin-right: 10px;
+    height: 50%;
+}
+
+select {
+    border: 0px solid;
+    width: 80%;
+}
+
+@media screen and (max-width: 996px) {
+    .separadores {
+        margin-bottom: 50px;
+    }
+}

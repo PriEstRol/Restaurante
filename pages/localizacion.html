@@ -16,6 +16,7 @@
     <link href="../css/localizacion.css" rel="stylesheet">
     <!--custom font-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="../css/animate.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                     <a class="nav-link" href="#">Galería</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Reserva</a>
+                    <a class="nav-link" href="reserva.html">Reserva</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Comentarios</a>
@@ -75,7 +76,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-5 ">
+            <div class="col-md-5 animated bounceInLeft">
                 <h3 style="font-family:'Dancing Script', cursive;">Información del restaurante</h3>
                 <br>
                 <br>
@@ -116,7 +117,7 @@
 
             </div>
             <div class="col-md-1 clearfix"></div>
-            <div class="col-md-6">
+            <div class="col-md-6 animated bounceInRight">
                 <h3 style="font-family:'Dancing Script', cursive;">Puedes encontrarnos aquí</h3>
                 <br>
                 <br>
@@ -138,10 +139,10 @@
             encontrar los GitHub de ambos alumnos.</p>
 
         <div class="social-media">
-            <a data-toggle="tooltip" data-placement="top" title="Francisco M. Roldán Pérez"
+            <a data-toggle="tooltip" data-placement="left" title="Francisco M. Roldán Pérez"
                href="https://github.com/FranRP"
                title=""><i class="fa fa-github"></i></a>
-            <a data-toggle="tooltip" data-placement="bottom" title="Jesús Estévez Rodríguez"
+            <a data-toggle="tooltip" data-placement="right" title="Jesús Estévez Rodríguez"
                href="https://github.com/jEstevezRod" title=""><i class="fa fa-github"></i></a>
         </div>
     </div>
@@ -204,6 +205,15 @@
 
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi0TplbIYCey3l9FmUQGSQPoRgXTiq01M&callback=initMap">
+</script>
+
+<script>
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
 </script>
 </body>
 
