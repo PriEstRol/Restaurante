@@ -119,3 +119,11 @@ button:hover {
 .breadcrumb-item a {
     color: #c2f3ff !important;
 }
+
+.logo {
+    border: 0px;
+    background: transparent;
+    max-height: 40px;
+    max-width: 60px;
+    margin-right: 15px;
+}

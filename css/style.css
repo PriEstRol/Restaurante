@@ -20,3 +20,11 @@
 .dropdown-toggle::after {
     display: none;
 }
+
+.logo {
+    border: 0px;
+    background: transparent;
+    max-height: 40px;
+    max-width: 60px;
+    margin-right: 15px;
+}
