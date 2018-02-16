@@ -1,57 +1,10 @@
 .view {
-    background: url("../img/wallpaper2.jpg") no-repeat center center;
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-}
-
-.intro {
-    min-height: 300px !important;
-}
-
-.alinear {
-    align-items: center;
+    background: url("https://cdnmundo2.img.sputniknews.com/images/107178/93/1071789321.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 .navbar {
     background-color: transparent;
-}
-
-.top-nav-collapse {
-    background-color: #4285F4;
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: #4285F4;
-    }
-
-    .marg {
-        margin-top: 18% !important;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .marg {
-        margin-top: 25% !important;
-    }
-}
-
-#mapa {
-    border: 2px solid;
-    height: 470px;
-    width: 100%;
-    color: #000000;
-}
-
-.marg {
-    margin-top: 7%;
-}
-
-.wow {
-    margin-bottom: 30px;
-    color: white;
-
 }
 
 .nb-footer {
@@ -88,8 +41,12 @@ footer.nb-footer .about p {
     color: #999;
 }
 
-button:hover {
-    background-color: #e7f1ff !important;
+.imagen {
+    padding: 50px;
+}
+
+.imagen img {
+    box-shadow: 5px 8px rgba(123, 123, 123, 0.63);
 }
 
 .top-nav-collapse {
@@ -105,10 +62,6 @@ button:hover {
     .navbar {
         background-color: #545150;
     }
-}
-
-.dropdown-toggle::after {
-    display: none;
 }
 
 .breadcrumb-item {

@@ -40,27 +40,40 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="localizacion.html">Localización<span
                             class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="carta.html">Carta</a>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Carta
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="menu.html">Menús</a>
+                        <a class="dropdown-item" href="carta.html">Platos</a>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Galería</a>
+                    <a class="nav-link" href="galeria.html">Galería</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="reserva.html">Reserva</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Comentarios</a>
+                    <a class="nav-link" href="comentarios.html">Comentarios</a>
                 </li>
             </ul>
         </div>
+        <ol class="breadcrumb text-right">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item">Carta - <a href="carta.html">Platos</a></li>
+            <li class="breadcrumb-item active">Menús</li>
+        </ol>
     </nav>
 
     <div class="view intro hm-purple-light">
@@ -68,7 +81,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-center fadeInUpBig wow marg" style="font-family: 'Dancing Script', cursive;
- font-size: 40px;">Aquí te mostramos nuestros mejores platos y carta</h3>
+ font-size: 40px;">Menú de Spinorat</h3>
                 </div>
             </div>
 
@@ -85,7 +98,7 @@
             <h1>Disfruta de nuestros exquisitos menús</h1>
         </div>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 animated flipInX">
                 <div class="jumbotron">
                     <h1 class="display-4">Menú del día A</h1>
                     <p class="lead">Una mezcla de dos de nuestros mejores platos adaptada para satisfacer el paladar de
@@ -94,18 +107,18 @@
                     <br>
                     <p> Los platos participantes son Canapés de jamón, queso y piña como entrante, Lasaña de Txangurro
                         como primero,Costillar de conejo relleno de foie-gras como segundo y Tiramisú casero de postre
-                        65€</p>
+                        45€</p>
                     <hr class="my-4">
                     <p>Accede al desplegable para ver los platos que componen el menú</p>
                     <p class="lead">
                         <button class="btn btn-danger btn-lg" role="button" data-toggle="collapse"
-                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Ver
+                                data-target="#menu" aria-expanded="false" aria-controls="menu">Ver
                             platos del menú
                         </button>
                     </p>
-                    <div class="collapse" id="collapseExample">
+                    <div class="collapse" id="menu">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
@@ -121,24 +134,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
-                                            <img class="card-img-top" src="../img/entrantes/entrantes3.jpg"
+                                            <img class="card-img-top" src="../img/primeros/primero3.jpg"
                                                  alt="Card image cap">
                                             <div class="mask waves-effect"></div>
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <h5 class="card-title">Canapés de jamón, queso y piña</h5>
-                                        <p class="card-text">Este plato, está cocinado con una base de Otros y pertenece
-                                            a los platos de la cocina Tradicional.</p>
+                                        <h5 class="card-title">Lasaña de Txangurro</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
@@ -154,7 +167,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
@@ -174,7 +187,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 animated flipInX">
                 <div class="jumbotron">
                     <h1 class="display-4">Menú del día B</h1>
                     <p class="lead">Una mezcla de dos de nuestros mejores platos adaptada para satisfacer el paladar de
@@ -188,14 +201,14 @@
                     <p>Accede al desplegable para ver los platos que componen el menú</p>
                     <p class="lead">
                         <button class="btn btn-danger btn-lg" role="button" data-toggle="collapse"
-                                data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                data-target="#menu2" aria-expanded="false" aria-controls="menu2">
                             Ver
                             platos del menú
                         </button>
                     </p>
-                    <div class="collapse" id="collapseExample2">
+                    <div class="collapse" id="menu2">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
@@ -211,7 +224,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
@@ -227,7 +240,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
@@ -243,7 +256,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
@@ -263,69 +276,182 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 animated flipInX">
                 <div class="jumbotron">
-                    <h1 class="display-4">Caballa con Lasaña y </h1>
-                    <p class="lead">Aquí tenemos un menú de Pate con Tartaleta de mejillones y un Filete de gallo, una
-                        explosión de sabores exquisita y que se mantendrá en tu paladar el resto del día.</p>
+                    <h1 class="display-4">Menú del día C</h1>
+                    <p class="lead">Una mezcla de dos de nuestros mejores platos adaptada para satisfacer el paladar de
+                        nuestros clientes, con suavidad, sabor y calidad en todos y cada uno de los ingredientes
+                        utilizados para su elaboración.</p>
                     <br>
-                    <p> Los platos participantes son Pato con crema de hongos y castañas, tartaleta con mejillones de
-                        bonito y filetes de gallo con salsa de gambas, y el precio del menú es de 48€</p>
+                    <p> Los platos participantes son Tartaleta de mejillones con bonito como entrante, Bogavante
+                        al estilo Newberg de primer plato, Rotí de pavo relleno de segundo y Flan tradicional de huevo
+                        al baño María de postre. El precio será de 73&euro;</p>
                     <hr class="my-4">
                     <p>Accede al desplegable para ver los platos que componen el menú</p>
                     <p class="lead">
                         <button class="btn btn-danger btn-lg" role="button" data-toggle="collapse"
-                                data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                data-target="#menu3" aria-expanded="false" aria-controls="menu3">
                             Ver
                             platos del menú
                         </button>
                     </p>
-                    <div class="collapse" id="collapseExample3">
+                    <div class="collapse" id="menu3">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
-                                            <img src="../img/primeros/primero1.jpg" class="img-fluid" alt="">
+                                            <img src="../img/entrantes/entrantes4.jpg" class="img-fluid" alt="">
                                             <div class="mask waves-effect"></div>
                                         </div>
                                     </div>
-                                    <div class="card-content">
-                                        <h4>Pato con crema de hongos y castañas</h4>
-                                        <p> Este plato, está cocinado con una base de Otros y pertenece a los platos de
-                                            la cocina Tradicional y es muy exclusivo.</p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tartaleta de mejillones con bonito</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
-                                            <img src="../img/primeros/primero4.jpg" class="img-fluid" alt="">
+                                            <img src="../img/primeros/primero2.jpg" class="img-fluid" alt="">
                                             <div class="mask waves-effect"></div>
                                         </div>
                                     </div>
-                                    <div class="card-content">
-                                        <h4>Tartaleta de mejillones con bonito</h4>
-                                        <p> Este plato, está cocinado con una base de Pescados y mariscos y pertenece a
-                                            los platos de la cocina Tradicional. </p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bogavante al estilo Newberg</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
                                 <div class="card hoverable">
                                     <div class="card-image">
                                         <div class="view overlay hm-white-slight z-depth-1">
-                                            <img src="../img/primeros/primero5.jpg" class="img-fluid" alt="">
+                                            <img src="../img/segundos/segundo5.jpg" class="img-fluid" alt="">
                                             <div class="mask waves-effect"></div>
                                         </div>
                                     </div>
-                                    <div class="card-content">
-                                        <h4>Filetes de gallo con salsa de gambas</h4>
-                                        <p> Este plato, está cocinado con una base de Pescados y mariscos y pertenece a
-                                            los platos de la cocina Tradicional. </p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rotí de pavo relleno</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Aves y
+                                            caza y
+                                            pertenece a los platos de la cocina Tradicional.</p>
                                     </div>
                                 </div>
+
+                            </div>
+                            <div class="col-sm-12 col-md-3 animated flipInY">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <div class="view overlay hm-white-slight z-depth-1">
+                                            <img src="../img/postres/postre7.jpg" class="img-fluid" alt="">
+                                            <div class="mask waves-effect"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Flan de huevo al baño María</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de
+                                            Postres y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 animated flipInX">
+                <div class="jumbotron">
+                    <h1 class="display-4">Menú del día D</h1>
+                    <p class="lead">Una mezcla de dos de nuestros mejores platos adaptada para satisfacer el paladar de
+                        nuestros clientes, con suavidad, sabor y calidad en todos y cada uno de los ingredientes
+                        utilizados para su elaboración.</p>
+                    <br>
+                    <p> Los platos participantes son Langostinos a la plancha como entrante, Foie a la plancha sobre
+                        ragú de pato de primer plato, Cabrito asado a la murciana de segundo y Crema tradicional
+                        catalana
+                        de postre. El precio será de 65&euro;</p>
+                    <hr class="my-4">
+                    <p>Accede al desplegable para ver los platos que componen el menú</p>
+                    <p class="lead">
+                        <button class="btn btn-danger btn-lg" role="button" data-toggle="collapse"
+                                data-target="#menu4" aria-expanded="false" aria-controls="menu4">
+                            Ver
+                            platos del menú
+                        </button>
+                    </p>
+                    <div class="collapse" id="menu4">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3 animated flipInY">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <div class="view overlay hm-white-slight z-depth-1">
+                                            <img src="../img/entrantes/entrantes7.jpg" class="img-fluid" alt="">
+                                            <div class="mask waves-effect"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Langostinos a la plancha</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Pescados y
+                                            mariscos y pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-md-3 animated flipInY">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <div class="view overlay hm-white-slight z-depth-1">
+                                            <img src="../img/primeros/primero7.jpg" class="img-fluid" alt="">
+                                            <div class="mask waves-effect"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Foie a la plancha y ragú de pato </h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Carnes y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-md-3 animated flipInY">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <div class="view overlay hm-white-slight z-depth-1">
+                                            <img src="../img/segundos/segundo8.jpg" class="img-fluid" alt="">
+                                            <div class="mask waves-effect"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cabrito asado a la murciana</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Aves y caza y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-md-3 animated flipInY">
+                                <div class="card hoverable">
+                                    <div class="card-image">
+                                        <div class="view overlay hm-white-slight z-depth-1">
+                                            <img src="../img/postres/postre4.jpg" class="img-fluid" alt="">
+                                            <div class="mask waves-effect"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Crema tradicional catalana</h5>
+                                        <p class="card-text">Este plato, está cocinado con una base de Postres y
+                                            pertenece a los platos de la cocina Tradicional.</p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

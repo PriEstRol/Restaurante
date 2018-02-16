@@ -14,6 +14,7 @@
     <!--custom font-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/localizacion.css" rel="stylesheet">
     <link href="../css/galeria.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 </head>
@@ -32,26 +33,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
+                <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="localizacion.html">Localización<span
                             class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown ">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="dropdownMenuLink"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Carta
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="menus.html">Menús</a>
+                        <a class="dropdown-item" href="menu.html">Menús</a>
                         <a class="dropdown-item" href="carta.html">Platos</a>
                     </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Galería</a>
+                <li class="nav-item">
+                    <a class="nav-link active" href="galeria.html">Galería</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="reserva.html">Reserva</a>
@@ -61,6 +62,10 @@
                 </li>
             </ul>
         </div>
+        <ol class="breadcrumb text-right">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active">Galería</li>
+        </ol>
     </nav>
 
     <div class="view intro hm-purple-light">
@@ -181,6 +186,23 @@
     </div>
 
 </div>
+<footer class="nb-footer">
+    <div class="about">
+        <img src="images/logo.png" class="img-responsive center-block" alt="">
+        <p>Este proyecto lo hemos realizado los alumnos Francisco Manuel Roldán Pérez y Jesus Estévez Rodríguez, con
+            ayuda de Bootstrap, Material Design, Jquery y los conocimientos proporcionados por el profesor para el
+            correcto uso de dichas herramientas. Abajo se pueden
+            encontrar los GitHub de ambos alumnos.</p>
+
+        <div class="social-media">
+            <a data-toggle="tooltip" data-placement="left" title="Francisco M. Roldán Pérez"
+               href="https://github.com/FranRP"
+               title=""><i class="fa fa-github"></i></a>
+            <a data-toggle="tooltip" data-placement="right" title="Jesús Estévez Rodríguez"
+               href="https://github.com/jEstevezRod" title=""><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <script>
@@ -196,5 +218,13 @@
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="../js/mdb.min.js"></script>
+<script>
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
+</script>
 </body>
 </html>

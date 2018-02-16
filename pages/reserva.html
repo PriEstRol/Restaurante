@@ -40,7 +40,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home </a>
                 </li>
                 <li class="nav-item">
@@ -54,21 +54,25 @@
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="menus.html">Menús</a>
+                        <a class="dropdown-item" href="menu.html">Menús</a>
                         <a class="dropdown-item" href="carta.html">Platos</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="galeria.html">Galería</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="reserva.html">Reserva</a>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="reserva.html">Reserva</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="comentarios.html">Comentarios</a>
                 </li>
             </ul>
         </div>
+        <ol class="breadcrumb text-right">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active">Reserva</li>
+        </ol>
     </nav>
 
     <div class="view intro hm-purple-light">
@@ -76,7 +80,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-center fadeInUpBig wow marg" style="font-family: 'Dancing Script', cursive;
- font-size: 40px;">Realiza ya tu reserva para disfrutar de nuestra cocina</h3>
+ font-size: 40px;">Reserva de mesa</h3>
                 </div>
             </div>
 
@@ -224,7 +228,7 @@
                     </div>
 
                 </div>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
                     Reservar
                 </button>
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -241,7 +245,7 @@
                                 Reserva realizada correctamente
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>
