@@ -1,5 +1,5 @@
 .view {
-    background: url("../img/wallpaper5.jpg") no-repeat center center;
+    background: url("../img/wallpaper6.jpg") no-repeat center center !important;
     display: flex;
     align-items: center;
     padding-bottom: 20px;
@@ -23,8 +23,79 @@
     color: #fff3cd;
 }
 
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+
+    .marg {
+        margin-top: 18% !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .marg {
+        margin-top: 25% !important;
+    }
+}
+
 .dropdown-toggle::after {
     display: none;
+}
+
+.breadcrumb-item {
+    font-weight: bold;
+    color: white !important;
+}
+
+.breadcrumb-item a {
+    color: #c2f3ff !important;
+}
+
+.logo {
+    border: 0px;
+    background: transparent;
+    max-height: 40px;
+    max-width: 60px;
+    margin-right: 15px;
+}
+
+.top-nav-collapse {
+    background-color: #545150;
+}
+
+.nb-footer {
+    background: #222;
+    padding-bottom: 40px;
+    border-top: 4px solid #a39ca3;
+}
+
+.nb-footer .about {
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 1170px;
+    text-align: center;
+}
+
+.social-media a {
+    padding: 10px 14px 10px 14px;
+    font-size: 20px;
+    margin: 0px 10px 0px 10px;
+    line-height: 45px;
+    border-radius: 100%;
+    color: #fdfff8;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.social-media a:hover {
+    background-color: white;
+    color: #2b2a2e;
+    border: 1px solid rgba(43, 42, 46, 0.3);
+}
+
+footer.nb-footer .about p {
+    font-size: 14px;
+    color: #999;
 }
 
 .panel-shadow {
