@@ -1,0 +1,19 @@
+.container {
+    font-family: 'Dancing Script';
+}
+
+.titulo {
+    justify-content: center !important;
+    margin-bottom: 30px;
+}
+
+.view {
+    background: url("../img/wallpaper3.jpg") no-repeat center center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.card-text {
+    margin-bottom: 30px;
+}
