@@ -16,6 +16,9 @@
     <link href="../css/localizacion.css" rel="stylesheet">
     <!--custom font-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="icon"
+          type="image/png"
+          href="../img/logo.png">
 
     <link href="../css/reserva.css" rel="stylesheet">
     <link href="../css/animate.css" rel="stylesheet">
@@ -27,7 +30,6 @@
 </head>
 
 <body>
-
 
 <!--Main Navigation-->
 <header>
@@ -104,6 +106,7 @@
                 <div class="form-group animated zoomInRight">
                     <div class="form-row">
                         <div class="col-md-5 separadores">
+                            <label>Danos tu nombre real</label>
                             <div class="input-group">
                                 <img src="../img/web/persona1.png" alt="">
                                 <input type="text" class="form-control form-control-sm" id="nombre"
@@ -115,6 +118,7 @@
                         </div>
                         <div class="col-1 clearfix"></div>
                         <div class="col-md-6 separadores">
+                            <label>Danos tu nombre real</label>
                             <div class="input-group">
                                 <img src="../img/web/persona1.png" alt="">
                                 <input type="text" class="form-control form-control-sm" id="appelidos"
@@ -128,7 +132,9 @@
 
                 </div>
                 <div class="form-group separadores animated zoomInLeft">
+                    <label>Correo necesario</label>
                     <div class="input-group">
+
                         <img src="../img/web/email1.png" alt="">
                         <input type="email" class="form-control form-control-sm" id="emailReserva"
                                aria-describedby="emailHelp" placeholder="Correo electrónico">
@@ -140,6 +146,7 @@
                 <div class="form-group animated zoomInRight">
                     <div class="form-row">
                         <div class="col-md-5 separadores">
+                            <label>Asegurate de introducir un DNI correcto</label>
                             <div class="input-group">
                                 <img src="../img/web/dni1.png" alt="">
                                 <input type="text" class="form-control form-control-sm" id="dniReserva"
@@ -151,13 +158,14 @@
                         </div>
                         <div class="col-1 clearfix"></div>
                         <div class="col-md-6 separadores">
+                            <label>Código postal necesario</label>
                             <div class="input-group">
                                 <img src="../img/web/postal1.png" alt="">
-                                <input type="text" class="form-control form-control-sm" id="postalReserva"
+                                <input type="number" class="form-control form-control-sm" id="postalReserva"
                                        aria-describedby="postalHelp" placeholder="Código postal de tu localidad">
                             </div>
 
-                            <small id="postal-Reserva" class="form-text text-muted">Introduce tu DNI
+                            <small id="postal-Reserva" class="form-text text-muted">Introduce tu Código Postal
                             </small>
                         </div>
                     </div>
@@ -192,11 +200,11 @@
                         <div class="col-md-6 separadores">
                             <div class="input-group">
                                 <img src="../img/web/date1.png" alt="">
-                                <input type="text" class="form-control form-control-sm" id="fechaReserva"
-                                       aria-describedby="fechaHelp" placeholder="Fecha de la reserva">
+                                <input type="date" class="form-control form-control-sm" id="fechaReserva"
+                                       aria-describedby="fechaHelp" value="2017-06-01">
                             </div>
 
-                            <small id="fecha-Reserva" class="form-text text-muted">Introduce la fecha de la reserva
+                            <small id="fecha-Reserva" class="form-text text-muted">Elige la fecha y hora de la reserva
                             </small>
                         </div>
                     </div>
@@ -206,19 +214,23 @@
                         <div class="col-md-5 separadores">
                             <div class="input-group">
                                 <img src="../img/web/hora1.png" alt="">
-                                <input type="text" class="form-control form-control-sm" id="hora"
-                                       aria-describedby="horaHelp" placeholder="Hora de la reserva">
+                                <input type="radio" id="contactChoice1"
+                                       name="contact" value="email">
+                                <label class="separar" for="contactChoice1">Empresa</label>
+
+                                <input type="radio" id="contactChoice2"
+                                       name="contact" value="phone">
+                                <label class="separar" for="contactChoice2">Particular</label>
 
                             </div>
-                            <small id="hora-Reserva" class="form-text text-muted">Introduce la hora deseada para la
-                                reserva
+                            <small id="hora-Reserva" class="form-text text-muted">Indica si eres empresa o particular
                             </small>
                         </div>
                         <div class="col-1 clearfix"></div>
                         <div class="col-md-6 separadores">
                             <div class="input-group">
                                 <img src="../img/web/tlf.png" alt="">
-                                <input type="text" class="form-control form-control-sm" id="tlf"
+                                <input type="number" class="form-control form-control-sm" id="tlf"
                                        aria-describedby="tlfHelp" placeholder="Tlf: 955 33 22 11">
                             </div>
                             <small id="tlf-Reserva" class="form-text text-muted">Introduce tu teléfono
@@ -260,7 +272,6 @@
 </main>
 <footer class="nb-footer">
     <div class="about">
-        <img src="images/logo.png" class="img-responsive center-block" alt="">
         <p>Este proyecto lo hemos realizado los alumnos Francisco Manuel Roldán Pérez y Jesus Estévez Rodríguez, con
             ayuda de Bootstrap, Material Design, Jquery y los conocimientos proporcionados por el profesor para el
             correcto uso de dichas herramientas. Abajo se pueden
@@ -291,9 +302,6 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="../js/mdb.min.js"></script>
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi0TplbIYCey3l9FmUQGSQPoRgXTiq01M&callback=initMap">
-</script>
 
 <script>
 
