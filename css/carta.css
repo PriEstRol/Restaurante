@@ -5,6 +5,10 @@
     padding-bottom: 20px;
 }
 
+.dropdown-toggle::after {
+    display: none;
+}
+
 .container {
     font-family: 'Dancing Script';
 }

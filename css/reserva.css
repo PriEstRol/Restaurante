@@ -30,3 +30,6 @@ select {
         margin-bottom: 50px;
     }
 }
+.dropdown-toggle::after {
+    display: none;
+}

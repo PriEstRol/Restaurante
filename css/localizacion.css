@@ -106,3 +106,7 @@ button:hover {
         background-color: #545150;
     }
 }
+
+.dropdown-toggle::after {
+    display: none;
+}

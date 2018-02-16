@@ -63,3 +63,7 @@
 .baguetteBox-button {
     background-color: transparent !important;
 }
+
+.dropdown-toggle::after {
+    display: none;
+}
