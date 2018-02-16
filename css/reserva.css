@@ -30,6 +30,27 @@ select {
         margin-bottom: 50px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    label {
+        display: none;
+    }
+
+    .separar {
+        display: block;
+    }
+}
+
 .dropdown-toggle::after {
     display: none;
+}
+
+.separar {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+label {
+    font-weight: bold;
+
 }
